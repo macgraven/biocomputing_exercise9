@@ -12,10 +12,10 @@ from plotnine import *
 #Question 1: Plot two relatd variables, load them into a text file, and produce a
 #scatter plot of the two of them, including a trendline
 
-#iceTemp=pd.read_csv('tempIceCream.txt',sep=',',header=0)
+iceTemp=pd.read_csv('tempIceCream.txt',sep=',',header=0)
 
-#a=ggplot(iceTemp,aes(x="temp",y="iceCream"))+geom_point()+coord_cartesian()+xlab("Temperature")+ylab("Ice Cream Sales")+stat_smooth(method="lm")
-#print(a)
+a=ggplot(iceTemp,aes(x="temp",y="iceCream"))+geom_point()+coord_cartesian()+xlab("Temperature")+ylab("Ice Cream Sales")+stat_smooth(method="lm")
+print(a)
 
 #Question 2: Write a script that generates two figures to summarize the data in "data.txt"
 #First, a barplot of population means
